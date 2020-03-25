@@ -1,0 +1,269 @@
+// Code generated for package main by go-bindata DO NOT EDIT. (@generated)
+// sources:
+// ui/bios.js
+// ui/index.html
+package main
+
+import (
+	"bytes"
+	"compress/gzip"
+	"fmt"
+	"io"
+	"io/ioutil"
+	"os"
+	"path/filepath"
+	"strings"
+	"time"
+)
+
+func bindataRead(data []byte, name string) ([]byte, error) {
+	gz, err := gzip.NewReader(bytes.NewBuffer(data))
+	if err != nil {
+		return nil, fmt.Errorf("Read %q: %v", name, err)
+	}
+
+	var buf bytes.Buffer
+	_, err = io.Copy(&buf, gz)
+	clErr := gz.Close()
+
+	if err != nil {
+		return nil, fmt.Errorf("Read %q: %v", name, err)
+	}
+	if clErr != nil {
+		return nil, err
+	}
+
+	return buf.Bytes(), nil
+}
+
+type asset struct {
+	bytes []byte
+	info  os.FileInfo
+}
+
+type bindataFileInfo struct {
+	name    string
+	size    int64
+	mode    os.FileMode
+	modTime time.Time
+}
+
+// Name return file name
+func (fi bindataFileInfo) Name() string {
+	return fi.name
+}
+
+// Size return file size
+func (fi bindataFileInfo) Size() int64 {
+	return fi.size
+}
+
+// Mode return file mode
+func (fi bindataFileInfo) Mode() os.FileMode {
+	return fi.mode
+}
+
+// Mode return file modify time
+func (fi bindataFileInfo) ModTime() time.Time {
+	return fi.modTime
+}
+
+// IsDir return file whether a directory
+func (fi bindataFileInfo) IsDir() bool {
+	return fi.mode&os.ModeDir != 0
+}
+
+// Sys return file is sys mode
+func (fi bindataFileInfo) Sys() interface{} {
+	return nil
+}
+
+var _uiBiosJs = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xac\x54\xcd\x8a\x13\x41\x10\xbe\x07\xf2\x0e\xb5\xed\x61\x7b\x42\x9c\xd1\x73\x08\xf8\x83\x37\xf1\xa2\x37\xf1\xd0\xdb\x5d\x49\x7a\xb7\xd3\x33\x74\xf7\x88\x61\x37\x27\x17\x14\x11\xc9\xc5\x83\x08\xe2\xd1\x93\xee\x45\x04\x21\xbe\xcd\x84\x3c\x86\x74\x26\x33\xd9\xa4\x27\x1a\xc1\x3e\x75\x57\xd5\xf7\x55\xd5\x57\x53\x93\x74\x3a\xed\x16\x74\xe0\x06\x3c\x4c\x99\x40\xb3\x7a\x2c\xbf\x5f\x2e\x7e\xce\x8a\x37\x9f\x97\xf3\x79\xf1\xe1\x8b\xb7\x25\xed\x16\x57\xcc\xda\x75\x18\x9c\xb7\x5b\x00\x00\x25\xdc\x9f\x0e\xa8\x94\x89\xfa\x51\x82\x4b\xa2\xda\x78\x27\x63\x86\x8d\xe1\xbc\x33\x85\xdc\xa8\xda\x5c\x46\x2d\x7f\x7c\x2b\x7e\x5d\x42\x53\x30\x67\x4a\x9d\x30\x7e\xb6\x71\x16\x5f\xdf\x2e\x5e\xcf\x8a\xd9\xbb\xe2\xe3\xa7\xe5\xd5\xcb\xe2\xd5\x7c\xf1\xfe\xaa\xf2\x26\xe5\xc5\xd7\x43\x73\xa3\xba\x35\xbe\x0b\x6e\x92\x21\xf4\x41\xe7\x4a\x45\x55\x0f\xfe\xc8\x01\xd0\x23\xef\xdc\xb2\xfa\xb3\x46\xe4\x46\xc5\x36\x53\xd2\x51\x12\x93\x28\xb6\x4a\x72\xa4\x37\x6f\x47\x9b\xe0\xe9\xe6\xaa\xd0\x81\x41\xdb\xdb\xe6\x2f\x99\xfa\x40\x4e\x2d\x09\xd2\x18\xb4\xd0\x07\x91\xf2\x7c\x8c\xda\xc5\xdc\x20\x73\xf8\x40\xa1\x7f\xd1\x63\xcb\x8d\xcc\xdc\x71\xd4\x0b\x40\xb1\x45\x77\xd7\x39\x23\x4f\x72\x87\x94\xf8\x1c\xa4\x0b\xc4\xe1\x0b\x97\x9c\xb2\xe7\xac\x44\x92\x5d\x64\x92\x34\x80\xb9\x49\xad\x4d\x8d\x1c\x4a\xed\x39\x02\x50\x88\xb0\x86\x93\xae\xd7\xe6\x20\xfe\xaa\xb8\x71\x2a\x72\x85\x01\x7d\xdd\xfc\x10\xdd\xba\x73\x7b\x6f\xf2\x84\x0d\x1f\xb1\x31\x52\x32\x42\x26\x48\xf4\xf4\xd6\xb3\x98\x65\x19\x6a\x71\x7f\x24\x95\xa0\x06\xed\x75\x9e\x6b\x43\x40\x65\x71\x5b\x77\x6e\xff\x55\x78\xa2\xa4\x3e\x3b\x40\x87\x2d\xd9\x57\x69\xfe\x0a\x19\x19\x1c\x34\x6b\x17\xc6\x1a\x54\x9e\xdd\xba\x89\x42\x3b\x42\x0c\xe7\xf9\x9f\xb5\xab\x64\x4b\x07\x40\xab\xe5\x89\xe0\xa8\x0f\x24\xd7\x02\x07\x52\xa3\x08\x95\xf4\x20\x5f\xbb\x41\x26\x26\x8f\x1d\x73\xe1\x32\x55\xed\xa5\x7a\x15\x64\x7d\x10\x1f\x31\x3d\xf4\x2b\x36\xc8\x35\x77\x32\xd5\x40\x1b\x71\xcd\x29\x56\x83\xf5\x9b\x8e\x82\xc0\xc5\x05\x34\x78\x79\x3a\xce\x14\x3a\x0c\x2b\x3e\xa8\x2c\xff\xaf\xe8\xed\xc7\x55\xf2\xd0\xdd\x91\x34\xc8\xba\xc7\x34\x2d\xbf\xd5\xbd\x5a\xf9\xf6\x0e\xd3\xe7\x8f\xc5\xec\x66\x0d\x26\x3f\x6d\xb7\xa6\xbf\x03\x00\x00\xff\xff\x64\xcd\xf7\x53\x10\x06\x00\x00")
+
+func uiBiosJsBytes() ([]byte, error) {
+	return bindataRead(
+		_uiBiosJs,
+		"ui/bios.js",
+	)
+}
+
+func uiBiosJs() (*asset, error) {
+	bytes, err := uiBiosJsBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "ui/bios.js", size: 1552, mode: os.FileMode(438), modTime: time.Unix(1584893552, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _uiIndexHtml = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xac\x94\xc1\x6e\x13\x31\x10\x86\xef\x91\xf2\x0e\x83\x39\x34\x11\x8d\x97\x4a\x1c\x50\x59\xe7\x42\x41\x20\x28\x41\x6d\x39\x54\xe2\xe2\xda\x93\x66\xda\x5d\x3b\xd8\xb3\x69\x0b\xea\xbb\x23\x6f\x92\x66\xb3\x6c\x51\x2a\xf0\x65\xf3\xcf\x78\x26\xdf\x3f\x92\x27\x7f\x76\x34\x79\x7b\x76\xfe\xf5\x1d\xcc\xb8\x2c\xc6\xfd\x5e\x9e\xbe\x50\x68\x77\xa9\x04\x3a\x31\xee\xf7\x52\x0c\xb5\x1d\xf7\x7b\x00\x00\x79\x89\xac\xc1\xcc\x74\x88\xc8\x4a\x7c\x3b\x7b\x3f\x7a\x2d\xb6\x72\x4e\x97\xa8\xc4\x82\xf0\x66\xee\x03\x0b\x30\xde\x31\x3a\x56\xe2\x86\x2c\xcf\x94\xc5\x05\x19\x1c\xd5\x62\x1f\xc8\x11\x93\x2e\x46\xd1\xe8\x02\xd5\x81\x7c\xf9\xd0\x8b\x89\x0b\x1c\x1f\x79\x53\x95\xe8\x38\xcf\x96\x7a\x95\x8c\x7c\xf7\x20\xd2\xa9\xa1\x7f\x6d\x74\x3a\x53\xef\xf8\x10\x0e\x5e\xcd\x6f\x41\x1c\x93\x09\xfe\xd4\x4f\x19\xce\xf5\x07\x24\xb1\x0f\x51\xbb\x38\x8a\x18\x68\xfa\x66\x53\x76\xbf\x6a\x9f\x35\xfb\xe7\xd1\x04\x9a\x33\xc4\x60\x94\xb8\x20\x1f\xe5\x55\x14\xe3\x3c\x5b\x86\xd3\xc8\xb2\xd5\x7c\xfa\xbd\xfc\xc2\xdb\xbb\x75\x9d\xa5\x05\x90\x55\x22\x78\xcf\xa9\xc0\xd2\x62\xbb\x65\xc3\x40\x81\x0c\x85\xd7\x16\x03\x28\x70\x78\x03\x9f\x6b\x31\x18\x36\xae\x78\x6d\x27\x15\x63\x38\xc1\xe8\xab\x60\x30\x36\xb3\xd3\xca\x19\x26\xef\x3a\xaf\xb5\x47\x63\x57\x53\x95\x3f\x2a\x0c\x77\xa7\x58\xa0\x61\x1f\x06\xe2\x79\x8d\x3a\x94\xe4\x1c\x86\x33\xbc\x65\x50\x20\x12\x09\xb9\x4b\xf8\xe2\x43\xa9\x0b\xfa\x89\xd2\xc4\x28\xa5\x14\xdb\x3d\x97\xf4\x32\x7d\x06\x7b\x33\xe6\x79\x3c\xcc\xb2\xca\xcd\xaf\x2f\xa5\xf1\x65\xe6\x9a\xd5\x7b\xfb\x30\x18\x82\x1a\xb7\xb9\x9e\xc6\xf6\x42\x81\x98\x7c\xfa\xee\xd6\x80\x27\xa8\x0d\xff\x09\xd6\x09\xb7\xc5\x16\x52\x61\x56\x95\x76\xf9\x4b\x5a\x5c\x60\xe1\xe7\x35\xc5\xd5\x5f\x61\xff\x03\xf0\xd1\xe4\xb8\x9b\x79\x87\xa1\xd6\xb8\x23\xeb\xcb\x0d\x7c\x52\x4f\x34\xf0\x6f\x26\x4e\xbd\xb9\x46\x96\xe4\x1f\x77\xb1\x83\x93\xb8\xee\x32\x32\x05\xa1\xe3\xcc\x52\xe4\x4d\x34\x39\xda\xd1\xc9\xfa\xcf\x3e\x26\xe2\xce\xa7\xd2\x3e\xf7\x8f\xe4\xba\xe2\xed\x58\x53\xdf\x3f\xf2\x1a\xdb\x24\x6d\x7a\x9e\x51\x94\x4b\xab\xa0\x80\xfc\x60\xd8\xb9\x92\x36\xeb\x66\xb5\x64\xea\xcd\x93\xb6\xf6\xef\x00\x00\x00\xff\xff\x5b\xfe\x84\xdf\xc5\x05\x00\x00")
+
+func uiIndexHtmlBytes() ([]byte, error) {
+	return bindataRead(
+		_uiIndexHtml,
+		"ui/index.html",
+	)
+}
+
+func uiIndexHtml() (*asset, error) {
+	bytes, err := uiIndexHtmlBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "ui/index.html", size: 1477, mode: os.FileMode(438), modTime: time.Unix(1584893850, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+// Asset loads and returns the asset for the given name.
+// It returns an error if the asset could not be found or
+// could not be loaded.
+func Asset(name string) ([]byte, error) {
+	cannonicalName := strings.Replace(name, "\\", "/", -1)
+	if f, ok := _bindata[cannonicalName]; ok {
+		a, err := f()
+		if err != nil {
+			return nil, fmt.Errorf("Asset %s can't read by error: %v", name, err)
+		}
+		return a.bytes, nil
+	}
+	return nil, fmt.Errorf("Asset %s not found", name)
+}
+
+// MustAsset is like Asset but panics when Asset would return an error.
+// It simplifies safe initialization of global variables.
+func MustAsset(name string) []byte {
+	a, err := Asset(name)
+	if err != nil {
+		panic("asset: Asset(" + name + "): " + err.Error())
+	}
+
+	return a
+}
+
+// AssetInfo loads and returns the asset info for the given name.
+// It returns an error if the asset could not be found or
+// could not be loaded.
+func AssetInfo(name string) (os.FileInfo, error) {
+	cannonicalName := strings.Replace(name, "\\", "/", -1)
+	if f, ok := _bindata[cannonicalName]; ok {
+		a, err := f()
+		if err != nil {
+			return nil, fmt.Errorf("AssetInfo %s can't read by error: %v", name, err)
+		}
+		return a.info, nil
+	}
+	return nil, fmt.Errorf("AssetInfo %s not found", name)
+}
+
+// AssetNames returns the names of the assets.
+func AssetNames() []string {
+	names := make([]string, 0, len(_bindata))
+	for name := range _bindata {
+		names = append(names, name)
+	}
+	return names
+}
+
+// _bindata is a table, holding each asset generator, mapped to its name.
+var _bindata = map[string]func() (*asset, error){
+	"ui/bios.js":    uiBiosJs,
+	"ui/index.html": uiIndexHtml,
+}
+
+// AssetDir returns the file names below a certain
+// directory embedded in the file by go-bindata.
+// For example if you run go-bindata on data/... and data contains the
+// following hierarchy:
+//     data/
+//       foo.txt
+//       img/
+//         a.png
+//         b.png
+// then AssetDir("data") would return []string{"foo.txt", "img"}
+// AssetDir("data/img") would return []string{"a.png", "b.png"}
+// AssetDir("foo.txt") and AssetDir("notexist") would return an error
+// AssetDir("") will return []string{"data"}.
+func AssetDir(name string) ([]string, error) {
+	node := _bintree
+	if len(name) != 0 {
+		cannonicalName := strings.Replace(name, "\\", "/", -1)
+		pathList := strings.Split(cannonicalName, "/")
+		for _, p := range pathList {
+			node = node.Children[p]
+			if node == nil {
+				return nil, fmt.Errorf("Asset %s not found", name)
+			}
+		}
+	}
+	if node.Func != nil {
+		return nil, fmt.Errorf("Asset %s not found", name)
+	}
+	rv := make([]string, 0, len(node.Children))
+	for childName := range node.Children {
+		rv = append(rv, childName)
+	}
+	return rv, nil
+}
+
+type bintree struct {
+	Func     func() (*asset, error)
+	Children map[string]*bintree
+}
+
+var _bintree = &bintree{nil, map[string]*bintree{
+	"ui": &bintree{nil, map[string]*bintree{
+		"bios.js":    &bintree{uiBiosJs, map[string]*bintree{}},
+		"index.html": &bintree{uiIndexHtml, map[string]*bintree{}},
+	}},
+}}
+
+// RestoreAsset restores an asset under the given directory
+func RestoreAsset(dir, name string) error {
+	data, err := Asset(name)
+	if err != nil {
+		return err
+	}
+	info, err := AssetInfo(name)
+	if err != nil {
+		return err
+	}
+	err = os.MkdirAll(_filePath(dir, filepath.Dir(name)), os.FileMode(0755))
+	if err != nil {
+		return err
+	}
+	err = ioutil.WriteFile(_filePath(dir, name), data, info.Mode())
+	if err != nil {
+		return err
+	}
+	err = os.Chtimes(_filePath(dir, name), info.ModTime(), info.ModTime())
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+// RestoreAssets restores an asset under the given directory recursively
+func RestoreAssets(dir, name string) error {
+	children, err := AssetDir(name)
+	// File
+	if err != nil {
+		return RestoreAsset(dir, name)
+	}
+	// Dir
+	for _, child := range children {
+		err = RestoreAssets(dir, filepath.Join(name, child))
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func _filePath(dir, name string) string {
+	cannonicalName := strings.Replace(name, "\\", "/", -1)
+	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
+}

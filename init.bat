@@ -1,0 +1,3 @@
+@echo off
+go get -u github.com/googollee/go-socket.io
+go get -u github.com/go-bindata/go-bindata/...
