@@ -14,8 +14,9 @@ func main() {
 	var input string
 	for {
 		fmt.Scanln(&input)
-		a, _ := strings.Split(input, " ")
+		a := strings.Split(input, " ")
 		fmt.Println(input)
+		fmt.Println(a)
 	}
 	fmt.Println(os.TempDir())
 	server, err := socketio.NewServer(nil)
